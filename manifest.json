@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "同业助手",
+  "version": "1.0",
+  "description": "订单模板生成 + 确认号助手",
+  "permissions": ["storage", "activeTab", "clipboardWrite", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
